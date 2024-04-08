@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: General Sans Medium;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.nav{
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+.part1{
+    display: flex;
+}
+
+.part1 h3, .part1>i{
+    border: 1px solid;
+    border-radius: 3vw;
+    padding: 0.8vw 1.6vw;
+    transition: all ease 0.4s;
+}
+
+.part3 button{
+    padding: 0.8vw 1.6vw;
+    border-radius: 3vw;
+    border: 1px solid;
+    background-color: transparent;
+    font-size: 1.1vw;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.part3 button:nth-child(even){
+    background-color: rgb(253, 135, 0);
+    color: #fff;
+}
+
+.main>h1{
+    font-size: 9vw;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* width: 100%;
+    text-align: center; */
+    white-space: nowrap;
+    /* background-color: red;  */
+}
+img{
+    width: 27vw;
+    height: 35vw;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+img:nth-child(3){
+    /* transform: translate(-50%,-50%) rotate(-10deg); */
+    z-index: 5;
+}
+img:nth-child(4){
+    transform: translate(-50%,-50%) rotate(-8deg);
+    z-index: 3;
+}
+img:nth-child(5){
+    transform: translate(-50%,-50%) rotate(-15deg);
+    z-index: 2;
+    
+}
+img:nth-child(6){
+    transform: translate(-50%,-50%) rotate(-20deg);
+    z-index: 1;   
+}
+
+.footer{
+    padding: 0 2vw;
+    width: 100%;
+    height: 10vh;
+    /* background-color: rgb(253, 135, 0); */
+    position: absolute;
+    bottom: 0vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.box1{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid; */
+    /* height: 100%; */
+    flex-direction: column;
+    justify-content: center;
+}
+.icon1{
+    display: flex;
+    gap: 1.5vw;
+    margin-bottom: 0.5vw;
+    font-size: 1.4vw;
+}
